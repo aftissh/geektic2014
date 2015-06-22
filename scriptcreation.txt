@@ -1,22 +1,20 @@
-drop table geek cascade;
-drop table centreInteret cascade;
+drop table geek;
+drop table centreInteret;
 drop table geek_ci;
 drop table audit;
 
 create table geek  (
-   idgeek	int not null identify,
+   idgeek	int not null identity,
    nom           varchar(30),
    prenom        varchar(30),
    sexe			 boolean,
    mail          varchar(30),
    idinteret     int
-   constraint pk_geek primary key (idgeek)
 );
 
 create table centreinteret  (
-   idinteret	int not null identify,
+   idinteret	int not null identity,
    libelle	varchar(30),
-   constraint pk_centreInteret primary key (idinteret)
 );
 
 create table geek_ci  (

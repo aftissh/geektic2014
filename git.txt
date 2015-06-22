@@ -2,3 +2,8 @@ git status
 git add nom fichier 
 git commit 
 git push
+
+
+un URL par page : 
+
+https://docs.angularjs.org/tutorial/step_07
