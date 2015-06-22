@@ -1,0 +1,23 @@
+drop table geek cascade constraints;
+drop table centreInteret cascade constraints;
+
+
+create table geek  (
+   idgeek	 number(4),
+   nom           varchar2(30),
+   prenom        varchar2(30),
+   mail          varchar2(30),
+   idinteret     number(4),
+   constraint pk_camion primary key (nocamion)
+);
+
+create table centreinteret  (
+   idinteret	number(4),
+   libelle	varchar2(30),
+   constraint pk_centreInteret primary key (id)
+);
+
+commit ;
+
+alter table geek
+   add constraint fk_geek_interet foreign key (idinteret) references centreinteret (idinteret);
