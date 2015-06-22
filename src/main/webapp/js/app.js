@@ -32,3 +32,14 @@ app.config(['$routeProvider', function ($routeProvider) {
         });
 }]);
 
+pp.controller('GeekListCtrl', ['$scope', function ($scope) {
+    // Créons un namespace pour les détails de l'utilisateur
+    // Également utile pour une aide visuelle dans le DOM
+    $scope.user = {};
+    $scope.user.details = {
+        "username": "Todd Motto",
+        "firstname": "yacine",
+        "id": "89101112"
+    };
+
+}]);
