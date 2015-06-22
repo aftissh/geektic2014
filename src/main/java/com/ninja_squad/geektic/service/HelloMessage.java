@@ -6,6 +6,6 @@ package com.ninja_squad.geektic.service;
  */
 public class HelloMessage {
     public String getMessage() {
-        return "Preference";
+        return "Recherche par preference";
     }
 }

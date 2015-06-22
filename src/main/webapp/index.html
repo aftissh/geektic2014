@@ -4,34 +4,28 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 </head>
 
-<html ng-app="geektic">
+<html ng-app="geektic" >
     <head>
         <title>Geektic</title>
     </head>
     <body>
-    <div id="bloc_page">
+        <div id="bloc_page">
 
-    <header  ng-controller="HelloCtrl">
-        <h1>{{ helloMessage.message }}</h1>
-    </header>
-    <section>
-        <input type="radio" name="choix" value="mi">MEN
-        <input type="radio" name="choix" value="ro">WOMEN
-        <input type="radio" name="choix" value="ro">ALL
-        <br>
-        Centre d'intéret :
-        <input type="text" name="nom" size="10">
-        <br>
-        <input type="submit" value="Recherche">
+            <header ng-controller="HelloCtrl" >
+                <h1>{{ helloMessage.message }}</h1>
+            </header>
 
-    </section>
-    <footer>
 
-    </footer>
+            <div ng-view></div>
 
-        <script src="/js/angular.js"></script>
-        <script src="/js/angular-route.js"></script>
-        <script src="/js/app.js"></script>
-        </div>
+            <footer>
+
+            </footer>
+
+
+            <script src="/js/angular.js"></script>
+            <script src="/js/angular-route.js"></script>
+            <script src="/js/app.js"></script>
+         </div>
     </body>
 </html>
