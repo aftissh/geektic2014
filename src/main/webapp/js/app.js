@@ -12,6 +12,13 @@ app.controller('RechercheCtrl', function($scope, $location) {
     }
 });
 
+app.controller('GeekListCtrl', function($scope, $location) {
+    $scope.retour = function(){
+        $location.path('/');
+    }
+});
+
+
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
@@ -43,3 +50,4 @@ pp.controller('GeekListCtrl', ['$scope', function ($scope) {
     };
 
 }]);
+

@@ -1,3 +1,4 @@
+@set GRADLE_USER_HOME=G:\DASI\COURS LP DASI\13 - JAVA EE\gradle_home
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem

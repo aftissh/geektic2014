@@ -7,8 +7,10 @@ import javax.persistence.*;
  */
 
 @Entity
+
 public class Geek {
 
+    @Id
     @Column( name = "idgeek" )
     private int id_g;
     @Column( name = "nom" )
