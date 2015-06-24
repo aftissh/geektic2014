@@ -31,11 +31,11 @@ app.controller('RechercheCtrl', function($scope, $location) {
     }
 });
 
-app.controller('GeekListCtrl', function($scope, $location) {
+/*app.controller('GeekListCtrl', function($scope, $location) {
     $scope.retour = function(){
         $location.path('/');
     }
-});
+});*/
 
 app.controller('GeekDetailsCtrl', function($scope, $location) {
     $scope.retour = function(){
@@ -44,4 +44,9 @@ app.controller('GeekDetailsCtrl', function($scope, $location) {
 });
 
 
+
+app.controller('GeekListCtrl', ['$scope', '$http',
+    function ($scope, $http) {
+        $http.get('/list').success(function(viewGeek) { $scope.viewGeek = viewGeek; });
+    }]);
 

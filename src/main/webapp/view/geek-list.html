@@ -1,9 +1,22 @@
-<div ng-controller="GeekListCtrl">
-    <tr>
-        <td>nom {{ user.details.username }}</td>
-        <td>penom{{ user.details.firstname }}</td>
-        <td>id {{ user.details.id }}</td>
-    </tr>
+<div  >
+    <table >
+        <tr style="text-align:center;">
+            <th>ID</td>
+            <th>Nom</td>
+            <th>Prenom</td>
+            <th>Email</td>
+            <th>Sexe</td>
+            <th></td>
+
+        </tr>
+        <tr ng-repeat="x in viewGeek | filter:filtrer" >
+            <td>{{ x.idgeek}}</td>
+            <td>{{ x.nom }}</td>
+            <td>{{ x.prenom }}</td>
+            <td>{{ x.sexe}}</td>
+            <td>{{ x.mail}}</td>
+        </tr>
+    </table>
 
     <button type="button" ng-click="retour()">Retour</button>
 

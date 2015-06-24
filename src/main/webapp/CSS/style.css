@@ -23,12 +23,14 @@ header {
 
 
 
+
 section
 {
     width: auto;
     display: inline-block;
     border: 1px solid blue;
     vertical-align: top;
+    align-content: center;
 }
 
 
