@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 
 @Entity
-
+@Table(name="CENTRE_INTERET")
 public class Geek {
 
     @Id
@@ -23,4 +23,23 @@ public class Geek {
     private String mail;
 
 
+    public int getId_g() {
+        return id_g;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public boolean isSexe() {
+        return sexe;
+    }
+
+    public String getMail() {
+        return mail;
+    }
 }

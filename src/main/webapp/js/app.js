@@ -6,20 +6,6 @@ app.controller('HelloCtrl', function($scope, $http) {
     });
 });
 
-app.controller('RechercheCtrl', function($scope, $location) {
-    $scope.recherche = function(){
-        $location.path('/list');
-    }
-});
-
-app.controller('GeekListCtrl', function($scope, $location) {
-    $scope.retour = function(){
-        $location.path('/');
-    }
-});
-
-
-
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/', {
@@ -39,15 +25,23 @@ app.config(['$routeProvider', function ($routeProvider) {
         });
 }]);
 
-pp.controller('GeekListCtrl', ['$scope', function ($scope) {
-    // Créons un namespace pour les détails de l'utilisateur
-    // Également utile pour une aide visuelle dans le DOM
-    $scope.user = {};
-    $scope.user.details = {
-        "username": "Todd Motto",
-        "firstname": "yacine",
-        "id": "89101112"
-    };
+app.controller('RechercheCtrl', function($scope, $location) {
+    $scope.recherche = function(){
+        $location.path('/list');
+    }
+});
 
-}]);
+app.controller('GeekListCtrl', function($scope, $location) {
+    $scope.retour = function(){
+        $location.path('/');
+    }
+});
+
+app.controller('GeekDetailsCtrl', function($scope, $location) {
+    $scope.retour = function(){
+        $location.path('/');
+    }
+});
+
+
 
